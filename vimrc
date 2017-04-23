@@ -96,3 +96,8 @@ autocmd FileType perl,vim let b:noStripWhitespace=1
 
 autocmd BufLeave,FocusLost * silent! wall
 
+" stuff specific to the macbook, probably should figure out
+" a way to make this part depend on the particulars of the
+" environment
+let g:syntastic_c_include_dirs = ['/usr/local/include/SDL2/']
+
